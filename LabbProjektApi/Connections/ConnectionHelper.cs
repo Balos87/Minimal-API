@@ -24,7 +24,7 @@ namespace LabbProjektApi.Connections
                     // Efter lite studier så skulle jag ha gjort en DTO (Data Transfer Object) för att hjälpa EF hitta allt.
                         // PGA Kommentaren ovan så har jag skapat en DTO enl rek, och är benägen att få det fungera.(skrivet innan lyckat försök)
                 options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
-                //Denna lösning är icke att rekommendera, att ignorera problem istället för schysst struktur är inget jag står för.
+                //IgnoreCycles - Denna lösning är icke att rekommendera, att ignorera problem istället för schysst struktur är inget jag står för.
                 //Med det sagt, jag behåller för erfarenhetens skull.
             });
 
